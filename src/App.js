@@ -119,7 +119,9 @@ const App = () => {
       <Header />
       <div style={{ padding: 20,  flexDirection: 'column', display: 'flex', justifyContent: 'center', alignItems: 'center'}}>
         <p />
-        <TextBold text={!isSent ? 'Verifikasi Pembukaan Rekening Cuan Kamu' : 'Berhasil Melakukan Verifikasi'} />
+        <TextBold text={
+              !isSent ? 'Verifikasi Pembukaan Rekening Cuan Kamu' 
+              : 'Berhasil Melakukan Verifikasi'} />
         <p />
         <TextRegular text="- Kamera dan Lokasi dibutuhkan untuk melakukan verifikasi KTP kamu" fs={16}/>
         <br />
